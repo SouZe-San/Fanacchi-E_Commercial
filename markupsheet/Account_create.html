@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join-Us</title>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   STYLESHEET     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <link rel="stylesheet" href="/stylesheet/style_of_Account.css">
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   IONICONS     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    GSAP       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <!-- @@@@@@@@@@@@@@===================   BOOTSTRAP  =====================@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup-btn" onclick="openPop()">
+            <b>Become a member</b>
+        </div>
+
+        <div class="popup-template">
+            <div class="popup-close" onclick="closePop()">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <div class="popup-top">
+                <h1>Become a Member</h1>
+                <p>We are glad that you preferred to choose us. Please fill up our form and recives many benifits.
+                </p>
+            </div>
+         
+
+
+            <div class="popup-form">
+                <form name="form1" method = "post" action="#" onsubmit="return validate()"> 
+                    <div class="form-row">
+                        <div class="form-row1 input">
+                            <input class="emptybox" type="text" maxlength="20" required name="fname">
+                            <label class="input-lable">Name</label>
+                        </div>
+                        <div class="form-row1 input">
+                            <input class="emptybox" type="text" required name="eid">
+                            <label class="input-lable">Email</label>
+                        </div>
+                        <div class="form-row1 input">
+                            <input class="emptybox" type="password" required name="pword">
+                            <lable class="input-lable">Password</lable>
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="form-row1 input">
+                            <input class="emptybox" type="text" name="con" required>
+                            <lable class="input-lable">Phone</lable>
+                        </div>
+                        <div class="form-row1 input">
+
+                            <input class="emptybox" type="text">
+                            <lable class="input-lable">City</lable>
+                        </div>
+                        <div class="form-row1 input">
+
+                            <input class="emptybox" type="text">
+                            <lable class="input-lable">Country</lable>
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="form-row1 textareaofthird input">
+
+                            <textarea class="emptybox" name="" id=""></textarea>
+                            <lable class="input-lable">Address</lable>
+                        </div>
+                        <div class="form-row1 input" id="side-left">
+                            <textarea class="emptybox" name="" id=""></textarea>
+                            <lable class="input-lable">Messsage</lable>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-row1">
+                            <!-- <input class="submit-popup utton" type="submit" value="Submit"> -->
+                            <button type="submit" class="submit-popup">Submit</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+
+
+        </div>
+        <div class="cursor">
+            <div class="inner-cursor"></div>
+        </div>
+    </div>
+
+    <script src="/logicsheet/script.js"></script>
+</body>
+
+</html>

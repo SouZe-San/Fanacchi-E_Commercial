@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/Style_of-login.css">
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <title>Log in Fanacci</title>
+
+        <!-- ====================================   FONT STYLES  ================================================= -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Fjalla+One&family=Great+Vibes&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+    
+        <!-- ====================================  REMIX ICON  ================================================= -->
+    
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- ====================================  GSAP   ================================================ -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+  integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--====================================    ANIME  @@@@@=================================================-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+  integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+</head>
+<body>
+    <section class="hero__section" id="bg-color" >
+
+        <!-- =======================================  HEADER PART  =============================================== -->
+        <div class="blur__nav">
+            <header class="navigation flex-center">
+
+                <!-- ==================================    MAIN NAVIGATION   =================================== -->
+                <h2 class="site__name">Fanacci</h2>
+
+                <!-- ------------------------------------------------------------------------------------------------------------- -->
+                <nav class="main__nav">
+                  
+                </nav>
+                <div class="product__icon">
+                    <a class="text-deco cart__logo" href="#"><i
+                            class="ri-shopping-cart-2-fill product__icon__logo cart__logo"></i></a>
+                    <a class="text-deco cart__logo" href="#"><i
+                            class="ri-heart-3-line product__icon__logo cart__logo"></i></i></a>
+                    <a class="text-deco cart__logo" href="#"><i
+                            class="ri-menu-line product__icon__logo cart__logo"></i></a>
+                </div>
+            </header>
+        </div>
+       
+    <div class="hero-section" id="click">
+        <div class="left" >
+            <!-- <img src="/assets/Loginpage/shoppers.jpg" alt=""> -->
+
+        </div>
+        <div class="right"> 
+            <h1>LOGIN</h1>
+            <form name="form1" method="post" action="#" onsubmit="return validate()">
+                <div class="username">
+                    <input name="name" class="input" type="text" maxlength="10" placeholder="UserName">
+                </div>
+                <div class="password">
+                    <input name="passward" class="input" type="password" name="" id="" maxlength="10"
+                        placeholder="password" required>
+                </div>
+                <div class="rember">
+                    <p> <input  type="checkbox" name="rememberMe" id="">Remember Me</p>
+                    <p style="cursor:pointer;">Forgot Password?</p>
+                </div>
+                <div>
+                    <input class="btn" type="submit" value="Sign In">
+
+                </div> </form>
+<p>Don't have an account? <a href="/markupsheet/Account_create.html">Come on</a></p>
+
+                    <div class="social">
+                        <p>Login with Socia media</p>
+                        <div class="social-icons">
+                        <i class="ri-facebook-fill"></i>
+                        <i class="ri-twitter-fill"></i>
+                        <i class="ri-instagram-fill"></i>
+                        <span>&</span>
+                        <i class="ri-google-fill"></i>
+                    </div>
+                    </div>
+           
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="/logicsheet/Loginlogic.js"></script>
+</body>
+</html>

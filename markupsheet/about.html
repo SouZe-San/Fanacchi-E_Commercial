@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Fanacci</title>
+    <!-- ====================================   FONT STYLES  ================================================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Fjalla+One&family=Great+Vibes&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ====================================  REMIX ICON  ================================================= -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- ====================================   STYLESHEET   ================================================= -->
+
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <link rel="stylesheet" href="/stylesheet/About_Style.css">
+
+    <!-- ====================================  GSAP   ================================================ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+        integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--====================================    ANIME  @@@@@=================================================-->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+    <!-- ============================ HIDDEN-MENU ============================= -->
+
+    <section class="big__nav">
+        <div class="the__big__nav">
+            <ul>
+                <li>
+                    <div class="cross__close" onclick="closeTheNav()">
+                        <i class="ri-close-line"></i>
+                    </div>
+                    <div class="link__module">
+                        <span><a class="text-deco white" href="">Male</a></span>
+                        <img src="/assets/arrow.png" alt="">
+                        <div class="hover-reveal__00 image01">
+                            <img class="hidden-img__00" src="/assets/sponsorimage/16-thomas-tommy-shelby-peaky-blinders.jpg.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="link__module">
+                        <span><a class="text-deco white" href="">Female</a></span>
+                        <img src="/assets/arrow.png" alt="">
+                        <div class="hover-reveal__00 image01">
+                            <img class="hidden-img__00" src="/assets/sponsorimage/femaleimage.png" alt="">
+                        </div>
+                    </div>
+                </li> 
+                <li>
+                    <div class="link__module">
+                        <span><a class="text-deco white" href="">Accesories</a></span>
+                        <img src="/assets/arrow.png" alt="">
+                        <div class="hover-reveal__00 image01">
+                            <img class="hidden-img__00" src="/assets/Kylie_section_product_imagess/img-2.jpg" alt="">
+                        </div>
+                    </div>
+                </li> 
+                <li>
+                    <div class="link__module">
+                        <span><a class="text-deco white" href="">About Us</a></span>
+                        <img src="/assets/arrow.png" alt="">
+                        <div class="hover-reveal__00 image01">
+                            <img class="hidden-img__00" src="/assets/sponsorimage/0d6e4591559383.5e34a098975dd.jpg" alt="">
+                        </div>
+                    </div>
+                </li>
+            </div>
+    </section>
+
+    <section class="hero__section">
+
+        <!-- =======================================  HEADER PART  =============================================== -->
+        <div class="blur__nav">
+            <header class="navigation flex-center">
+
+                <!-- ==================================    MAIN NAVIGATION   =================================== -->
+               <a href="/markupsheet/index.html" style="text-decoration:none ; color:black;"> <h2 class="site__name">Fanacci</h2></a>
+
+                <!-- ------------------------------------------------------------------------------------------------------------- -->
+                <nav class="main__nav">
+                    <!-- <ul class="nav__items list-style-none flex-center">
+                        <li class="nav__item list-style-none">
+                            <a href="#" class="nav__link text-deco">
+                                New Trends
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link text-deco">
+                                King Kylie
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link text-deco">
+                                Top K Pop
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link text-deco">
+                                Your Stars
+                            </a>
+                        </li>
+                    </ul> -->
+                </nav>
+                <div class="product__icon">
+                    <div class="call-to-action ">
+                        <a class="text-deco cart__logo" href="#">
+                            <i class="ri-shopping-cart-2-fill product__icon__logo cart__logo"></i>
+                        </a>
+                    </div>
+                    <div class="call-to-action ">
+                        <a class="text-deco cart__logo call-to-action-btn" href="#">
+                            <i class="ri-heart-3-line product__icon__logo cart__logo"></i>
+                        </a> </div>
+                    <div class="call-to-action " onclick="openTheNav()">
+                        <a class="text-deco cart__logo call-to-action-btn" href="#">
+                            <i class="ri-menu-line product__icon__logo cart__logo"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- ====================================FRONT SECTION ======================================================== -->
+        <main>
+            <h1 class="tagline">
+                Fanacci An <br>
+                Fationable approach
+            </h1>
+        </main>
+    </section>
+    <!-- ==================================== 2nd SECTION =========================================== -->
+    <section class="Second__part">
+        <div class="upper flex-center">
+            <h2>Why Fashion is Mordan Life-Style</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam tempore ratione modi delectus consectetur
+                perferendis molestiae qui. Odit, maxime ullam?</p>
+        </div>
+
+        <div class="lower">
+
+            <div class="card">
+                <i class="ri-user-smile-fill"></i>
+                <div class="container">
+                    <h4>HAPPINESS</h4>
+                    <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate?</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="ri-shirt-fill"></i>
+                <div class="container">
+                    <h4>STYLISH</h4>
+                    <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate?</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="ri-customer-service-fill"></i>
+                <div class="container">
+                    <h4>COMMUNICATION</h4>
+                    <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate?</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="ri-heart-3-fill"></i>
+                <div class="container">
+                    <h4>HEALTH</h4>
+                    <p class="first1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cupiditate?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== 3rd SECTION ========================================== -->
+
+    <section class="third__part">
+
+        <div class="left">
+            <h2>
+                Design & Quality <br> Of Products
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, neque!</p>
+
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat.</li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <img src="/assets/kpop__section/peakpx (1).jpg" alt="producimage">
+        </div>
+
+    </section>
+
+    <!-- ================================== 4th SECTION ================================================== -->
+
+    <div class="forth__part">
+        <div class="up flex-center">
+            <h2>Understanding Your Doshas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, nostrum.</p>
+        </div>
+
+        <div class="down">
+            <div class="box A">
+                <h1>1</h1>
+                <p>Encourages You to Accept <span>the mordan Life-Style</span> </p>
+            </div>
+            <div class="box B" style="margin-top: 10vw;">
+                <h1>2</h1>
+                <p>Allows you to co-oporete<span> with New days</span> </p>
+            </div>
+            <div class="box C" style="margin-top: 20vw;">
+                <h1>3</h1>
+                <p>Helps you to Understand Your<span>benifits for fashionable</span> </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================= 5th SECTION ================================================== -->
+
+    <section class="fifth__part">
+        <div class="left_part">
+            <img src="/assets/About_Section_images/Eva-adams.jpg" alt="Meditaion">
+        </div>
+        <div class="right_part">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ratione laborum nihil eveniet eos soluta,
+                optio culpa</p>
+            <div class="left-border">
+                <h4>western</h4>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="left-border">
+                <h4>Eastern</h4>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="left-border">
+                <h4>Culture</h4>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================== 6th SECTION============================= -->
+
+    <section class="sixth__part">
+        <div class="leftside">
+            <h2>Fashion For <br> Todays Woman</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi neque veniam deserunt doloribus esse accusamus commodi laudantium aperiam nihil quisquam?</p>
+            <img src="/assets/hero__section__images/3girls.jpg" alt="">
+        </div>
+        <div class="rightside">
+            <img src="/assets/hero__section__images/inesh-thamotharampillai-UR9WmBBlRFU-unsplash.jpg" alt="Tradisonal">
+        </div>
+    </section>
+
+    <script>
+
+        const reveal = gsap.timeline({
+
+        })
+        // reveal.from(".content",{
+        //     y: -1000,
+        //     ease: Power4.easeOut,
+        //     duration: 0.2,
+        //     opacity:0,
+
+        // })
+        
+        reveal.from(".item img ",{
+            x: 400,
+            ease:Power4.easeOut,
+            duration: 1.5,
+            opacity: 0,
+        })
+        reveal.from(".blur__nav",{
+            y:-100,
+            duration: 0.5,
+            ease: Power4.easeOut,
+        },"-=0.3")
+        reveal.from(".text-inner",{
+            x:400,
+            ease: Power1.easeOut,
+            duration:0.8,
+            opacity: 0
+        })
+
+        gsap.to(".button__your__stars ,.shop__now__button",{
+            y:-50,
+            // x:100,
+            // skewY: 20,
+            duration: 0.5,
+            yoyo: "true",
+            ease: Power4.easeOut,
+            repeat: -1
+        })
+
+
+        gsap.to(".partner__names",{
+            duration: 3,
+            x: -2000,
+            ease: Power1.easeOut,
+            stagger: {
+                amount:0.3
+            },
+            yoyo: "ture",
+            delay: 5,
+            repeat: -1
+
+        })
+
+        const theNav = gsap.timeline({
+            paused:"true"
+        })
+        theNav.from(".big__nav",{
+            y:-1000,
+            ease: Power1.easeOut,
+            opacity: 0,
+            duration:1,
+            stagger:{
+                amount :0.4
+            }
+        })
+        theNav.from(".link__module, ",{
+            y:-100,
+            duration:0.8,
+            ease:Power1.easeOut,
+            opacity:0,
+            stagger: {
+                amount:0.5
+            }
+        })
+
+        function openTheNav(){
+            theNav.play()
+        }
+        function closeTheNav(){
+            theNav.reverse()
+        }
+        // reveal.from(".product__card",{
+        // x: 3000,
+        // skewY: 30,
+        // duration: 0.7,
+        // ease: Power4.easeOut,
+        // opacity:0,
+        // stagger: {
+        //     amount: 0.4
+        //     }
+        // })
+        // 
+    </script>
+    
+    <script src="/logicsheet/marqueeeffect,js/gsapof.js"></script>
+    <script src="/logicsheet/marqueeeffect,js/anotherMarqueeeffect.js"></script>
+    <script src="/logicsheet/menu.js"></script>
+    <script src="/logicsheet/hover-effect.umd.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/logicsheet/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/logicsheet/scrollreveal/myreveal.js"></script>
+
+
+    <script src="/logicsheet/magnetic/magnetic2.js"></script>
+
+    <script src="/logicsheet/scrollreveal/imagehoverreveal/script.js"></script>
+</body>
+
+</html>

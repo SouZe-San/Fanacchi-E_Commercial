@@ -1,0 +1,148 @@
+.hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#bg-color {
+    background: linear-gradient(to top right, #FEC02D, rgb(239, 239, 119), white, #F49C00);
+}
+
+.hero-section {
+    margin-top: 6vw;
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 1px 2px 30px 10px rgb(60, 61, 60);
+    margin-left: 13vw;
+}
+
+.left {
+    width: 50%;
+    background: url(/assets/Loginpage/shoppers_yellow.jpg);
+    //     // background: url(/assets/Loginpage/shoppin_aqua.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// .left:hover {
+//     background: url(/assets/Loginpage/shoppin_aqua.jpg);
+//     background-position: left;
+
+//     #bg-color {
+//         background: linear-gradient(to top right, #62C5E4, rgb(119, 229, 239), white, #009EC3);
+//     }
+// }
+
+.left img {
+
+    width: 100%;
+    // height: 33vw;
+    height: 100%;
+}
+
+.right {
+    padding-left: 3vw;
+    padding-top: 2vw;
+    width: 50%;
+}
+
+.right h1 {
+    border-bottom: 2px solid #FD0002;
+    display: inline-block;
+}
+
+.rember {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 9vw;
+}
+
+.input {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.username {
+    margin: 2rem 0;
+}
+
+.password {
+    margin-bottom: 0.8rem;
+}
+
+.username,
+.password {
+    /* border: 2px solid black; */
+    border-radius: 27px;
+    /* margin: 2rem 0; */
+    width: 23vw;
+    text-align: left;
+    padding-left: 12px;
+    height: 6vh;
+    line-height: 6vh;
+    background: #b6afaf57;
+}
+
+.rember p {
+    font-size: 0.7rem;
+}
+
+.btn {
+    margin: 2vw 3.5rem;
+    padding: 3px;
+    border: none;
+    border-radius: 30px;
+    width: 14rem;
+    height: 2rem;
+    cursor: pointer;
+    background: linear-gradient(to right, yellow, orange);
+    color: #0c1bf6;
+
+}
+
+.btn:hover {
+    opacity: 80%;
+    color: black;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.social {
+    text-align: center;
+    margin-top: 1.5vw;
+    margin-right: 10vw;
+}
+
+.social-icons {
+    width: 100%;
+}
+
+.social-icons i {
+    margin: 1vw 0.5vw;
+    background-color: #FDA600;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+    color: white;
+}

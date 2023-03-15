@@ -1,0 +1,459 @@
+@font-face {
+    font-family: "Central Display DEMO";
+    src: url(/fonts/CentralDisplayDemoExpanded-w1ql3.woff) format("woff");
+}
+
+@font-face {
+    font-family: "ArtelyInksPersonalUse-vpWL";
+    src: url(/fonts/ArtelyInksPersonalUse-vpWL.woff) format("woff");
+}
+
+@font-face {
+    font-family: "RoxaleStoryItalic";
+    src: url(/fonts/RoxaleStoryItalic-GOwLa.woff) format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@100;300&family=Poppins:wght@100&family=Roboto:wght@400;500&display=swap');
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@  GLOBAL VARIABLES
+
+.list-style-none {
+    list-style: none;
+}
+
+.text-deco {
+    text-decoration: none;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.left-border{
+    border-left: 3px solid #eba96640;
+}
+// @@@@@@@@@@@@@@@@@@@@@@@@ FUNCTIONS
+@mixin center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Poppins;
+}
+
+
+// =========================================  THE MAIN HERO SECTION================================
+.hero__section {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: url(/assets/About_Section_images/Bisckit-background.jpg) fixed no-repeat;
+    background-size: cover;
+}
+
+//  ------ THE NAVIGATION 
+.blur__nav {
+    width: 100%;
+    height: 8vh;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.hero__section .navigation {
+    width: 90%;
+    margin-left: 5%;
+    height: 100%;
+    // background-color: red;
+    place-items: center;
+    text-align: center;
+
+    font-size: 1.2rem;
+    z-index: 3;
+    font-family: "Bagola";
+
+}
+
+.hero__section .navigation .main__nav {
+    // background-color: black;
+    width: 80%;
+
+}
+
+.nav__item {
+    margin: 0 1.5rem;
+    mix-blend-mode: difference;
+}
+
+.nav__item .nav__link {
+    color: #ffffff;
+    font-family: "KARA";
+    transition: all 0.4s ease-outs;
+    // mix-blend-mode: difference;
+}
+
+.nav__item .nav__link:hover {
+    color: black;
+
+}
+
+.product__icon {
+    width: 15vw;
+    // background-color: black;
+
+}
+
+.product__icon__logo {
+    margin-right: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+}
+
+h1.tagline {
+    margin-top: 18%;
+    margin-left: 3vw;
+    font-size: 3rem;
+    //  font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+//============================================= 2nd SECTION  =============================================
+.Second__part {
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 5vw;
+    height: 32vw;
+    background: #E3E3E2;
+
+}
+
+.Second__part .upper {
+    //  display: flex;
+    flex-direction: column;
+    //  justify-content: center;
+    font-size: 0.7rem;
+}
+
+
+.Second__part .upper h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+
+
+.lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1vw;
+
+}
+
+.card {
+    margin: 10px;
+    //   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    transition: width 0.3s;
+    width: 20%;
+    height: 18vw;
+    transition: transform .4s ease-in;
+    padding-top: 1vw;
+
+}
+
+.card i {
+
+    border-radius: 50%;
+    aspect-ratio: 1;
+    position: relative;
+    left: 34%;
+    display: inline-block;
+    width: 0vw;
+    font-size: 4rem;
+    transition: all 0.3s ease-in;
+}
+
+.container {
+    padding: 1rem 5px;
+    text-align: center;
+}
+
+.card .container h4 {
+    font-weight: 400;
+    color: black;
+}
+
+.first1 {
+    color: rgb(237, 11, 11);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.card:hover {
+    /* width: 350px; */
+    box-shadow: 0 8px 16px 0 rgb(50, 49, 49);
+    transform: translateY(-3px);
+}
+
+// .card:hover + i{
+//     transform: translateY(-2rem);
+// }
+
+// ============================================================ Third SECTION,==========================================
+
+.third__part {
+    display: flex;
+    flex-direction: row;
+    padding: 2% 7%;
+    height: 50vw;
+    justify-content: space-between;
+    // background-color: #181715;
+    background-color: #111310;
+    color: white;
+}
+
+.left {
+    padding: 17vh 10vw;
+}
+
+.left h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.3rem;
+    margin-bottom: 4vh;
+}
+
+.left p {
+    font-size: 1rem;
+    font-family: "ArtelyInksPersonalUse-vpWL";
+    color: rgb(255, 157, 0);
+}
+
+.left ul {
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+.left ul li {
+    font-family: "RoxaleStoryItalic";
+
+}
+
+.right {
+    width: 50%;
+    transition: all 0.4s ease-out;
+}
+
+.right img {
+    width: 34vw;
+    height: 95%;
+}
+.right:hover{
+    background: url(/assets/kylie_janner_images/another-image-of-kylie-janner.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+background-size: cover;
+    img{
+        display: none;
+    }
+    .third__part{
+        background-color: white;
+        color: black;
+    }
+}
+
+// ======================================== FORTH SECTION ===============================================
+.forth__part {
+    display: flex;
+    flex-direction: column;
+    height: 48vw;
+    background: #908e8c40;
+}
+
+.forth__part .up {
+    margin: 3vw 0;
+    flex-direction: column;
+    height: 7vw;
+}
+
+.up h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+.up p {
+    font-size: 1rem;
+    font-family: "ArtelyInksPersonalUse-vpWL";
+    color: rgba(255, 149, 0, 0.934);
+}
+
+.forth__part .down {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding: 3vw 10vw;
+    justify-content: space-around;
+    align-items: center;
+height: 24vw;
+
+}
+
+.down .box {
+    display: flex;
+    flex-direction: row;
+    // border: 2px solid red;
+    height: 11vw;
+    width: 24vw;
+    background: white;
+    border: none;
+    transition: all 0.4s ease-out;
+}
+.box:hover{
+    box-shadow: 1px 0px 20px  10px rgba(173, 172, 172, 0.817);
+}
+.down .A:hover{
+    transform:translateY(1.5rem);
+}
+.down .B:hover{
+    transform:translateY(-0.5rem);
+}
+
+.down .C:hover{
+    transform:translateY(-2.5rem);
+}
+
+.box h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    display: inline-block;
+    margin: 3px 14px;
+    color: #BFA69B;
+}
+
+.box p{
+    // font-family: "RoxaleStoryItalic";
+    // font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    padding: 22px 0;
+    font-size: 1.2rem;
+}
+.box p span{
+    color:rgba(255, 149, 0, 0.934) ;
+}
+
+// ====================================== FIFTH SECTION ==========================================\
+
+
+.fifth__part{
+    height: 37vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // align-items: center;
+    background-color: #181715;
+    color: white;
+}
+
+.left_part{
+   padding-left: 10vw;
+    padding-top: 1vw;
+  
+}
+
+.left_part img{
+    width: 26vw;
+    height: 95%;
+    box-shadow: 6px 3px 30px 2px #332F2C;
+}
+
+.left-border:hover{
+    box-shadow: -1px 0px 10px 1px white;
+}
+
+    
+
+.right_part{
+    padding-top: 5%;
+    width: 40vw;
+}
+
+.right_part div{
+    margin-top: 3vh;
+    padding-left: 2vw;
+
+}
+
+.right_part div p{
+    font-family: "ArtelyInksPersonalUse-vpWL";
+}
+
+// ==================================== SIXTH SECTION =======================================
+
+.sixth__part{
+    height: 47vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    padding-left: 5vw;
+    padding-top: 3vw;
+    
+}
+.leftside img{
+    margin-top: 2vw;
+    height: 70%;
+    width: 87%;
+    display: inline-block;
+
+}
+.leftside h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+.leftside p{
+    font-family: "RoxaleStoryItalic";
+    width: 80%;
+}
+.rightside{
+    padding:  3vw 5vw 1vw 0;
+//     padding-right: 3vw;
+// padding-top: 3vw;
+}
+.rightside img{
+    height: 100%;
+    width: 33vw;
+}
